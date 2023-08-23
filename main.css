@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+
+body {
+    background-color: #dedddd;
+}
+
+.container, ul {
+    width: 350px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 24px;
+}
+
+form {
+    margin-top: 180px;
+    padding: 24px 0;    
+    text-align: center;    
+}
+
+input, button {
+    padding: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+li {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.marcado {
+    text-decoration: line-through;
+    color: rgb(43, 128, 0, .3);
+    font-weight: lighter;
+}

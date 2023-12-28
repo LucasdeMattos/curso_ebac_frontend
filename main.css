@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;       
+}
+
+header {
+    display: flex;
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sobre-a-loja {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    
+}
+
+.sobre-a-loja img {
+    margin-right: 32px;
+    max-width: 40%;
+}
+
+h2 {
+    padding-bottom: 8px;
+    color: #192a56;
+    border-bottom: 2px solid #192a56;
+}
+
+.sobre-a-loja p {
+    text-align: justify;
+    margin-top: 16px;
+}
+
+.celulares li {
+    list-style: none;
+    max-width: 100%;
+    padding: 16px 0 ;
+}
+
+#celulares h2 {
+    margin-top: 64px;
+}
+
+.celulares h3 {    
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+
+.celulares p {
+    text-align: justify;
+    margin-bottom: 16px;    
+}
+
+.celulares button {
+    width: 100%;
+    padding: 8px;
+    background-color: #192a56;  
+    color: #fff;
+    cursor: pointer;
+}
+
+section .celulares ul {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+}
+
+.celulares img {
+    max-width: 100%;
+}
+
+.celulares li div {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 640px) {
+ 
+    header .container {
+        margin-left: 32px;
+    }
+
+    header {
+        margin-bottom: 32px;
+    }
+
+    .sobre-a-loja {
+        display: block;   
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .sobre-a-loja img {
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    #celulares {
+        display: block;   
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    section .celulares ul {
+        display: block;
+        clear: both;
+    }    
+    
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+    header .container {
+        margin-left: 32px;
+    }
+
+    .sobre-a-loja {
+        display: block;   
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .sobre-a-loja img {
+        max-width: 100%;
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+
+    section .celulares ul {
+        display: grid;
+        grid-template-columns: repeat(2, 47%);
+        column-gap: 2%;
+    }
+
+}
